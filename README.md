@@ -1,2 +1,2 @@
 # QuantityMeasurementApp-Frontend
-This is about Quantity Measurement App Frontend
+This is about Quantity Measurement App Frontend (dev)
