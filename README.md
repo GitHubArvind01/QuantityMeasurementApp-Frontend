@@ -110,6 +110,13 @@ src/
 ---
 
 ### 🖼️ Application Snapshots
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023059" src="https://github.com/user-attachments/assets/9a6cf78a-2839-483a-8700-0f4e65f583e6" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023013" src="https://github.com/user-attachments/assets/a8bbdfc4-4ea7-4756-b6d7-8f2ae3a04fa2" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023023" src="https://github.com/user-attachments/assets/4b18224e-dacc-4b8c-9b23-d5003672ebf1" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 025850" src="https://github.com/user-attachments/assets/317b3908-2320-4b94-9587-5af2a67c3bda" />
+<img width="960" height="600" alt="Screenshot 2026-03-31 034738" src="https://github.com/user-attachments/assets/04b5ee66-ec57-4b0c-97af-df4823d152df" />
+<img width="960" height="599" alt="Screenshot 2026-03-31 034651" src="https://github.com/user-attachments/assets/2ba46c74-af5a-400b-92d9-054af806128b" />
+<img width="960" height="600" alt="Screenshot 2026-03-31 034659" src="https://github.com/user-attachments/assets/91855ff7-5985-45df-94ea-1310a7538779" />
 
 ---
 
