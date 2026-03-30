@@ -73,7 +73,7 @@ Build a **scalable and maintainable frontend** using Angular with TypeScript.
 ---
 
 ### 📁 Project Structure
-
+```
 src/
 │
 ├── app/
@@ -85,7 +85,7 @@ src/
 │
 ├── assets/
 └── environments/
-
+```
 
 ---
 
@@ -106,18 +106,19 @@ git checkout feature/frontend-angular
 npm install
 ng serve
 Open http://localhost:4200
+```
 
-🔥 Key Learnings
+### 🔥 Key Learnings
 - Component-based UI design
 - Service-layer architecture
 - Reactive programming with Observables
 - Scalable frontend structure
 
-📌 Future Enhancements
-🔐 Authentication Integration (JWT / OAuth2)
-🛡️ Route Guards (Angular)
-🎨 UI Improvements (Material / Tailwind)
-⚡ Performance Optimization
-📦 State Management (NgRx)
+### 📌 Future Enhancements
+- 🔐 Authentication Integration (JWT / OAuth2)
+- 🛡️ Route Guards (Angular)
+- 🎨 UI Improvements (Material / Tailwind)
+- ⚡ Performance Optimization
+- 📦 State Management (NgRx)
 
-🖼️ Application Snapshots
+### 🖼️ Application Snapshots
