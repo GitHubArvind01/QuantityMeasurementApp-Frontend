@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
@@ -16,7 +16,32 @@ export class AuthComponent {
   errorMessage = '';
   private authService = inject(AuthService);
   private router = inject(Router);
+  private route = inject(ActivatedRoute);
 
+  ngOnInit() {
+    // Check if we are returning from Google with a code
+    this.route.queryParams.subscribe(params => {
+      const code = params['code'];
+      if (code) {
+        this.processGoogleLogin(code);
+      }
+    });
+  }
+
+  loginWithGoogle() {
+    this.authService.initiateGoogleLogin();
+  }
+  
+  private processGoogleLogin(code: string) {
+    this.authService.handleGoogleCallback(code).subscribe({
+      next: (res) => {
+        this.router.navigate(['/dashboard']);
+      },
+      error: (err) => {
+        this.errorMessage = "Google Authentication failed.";
+      }
+    });
+  }
   authData = { username: '', email: '', password: '', confirmPassword: '', role: 'USER' };
 
   toggleMode() {

@@ -8,7 +8,14 @@ body {
     margin: 0;
 }
 
-.from-container {
+.auth-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .from-container{
     background-color: white;
     padding: 25px;
     border-radius: 12px;
@@ -115,4 +122,33 @@ input {
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+
+/* google login button style */
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
