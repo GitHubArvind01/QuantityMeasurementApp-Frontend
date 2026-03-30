@@ -77,14 +77,34 @@ Build a **scalable and maintainable frontend** using Angular with TypeScript.
 src/
 │
 ├── app/
-│   ├── components/
-│   ├── services/
-│   ├── models/
-│   ├── app-routing.module.ts
-│   └── app.module.ts
+│ ├── components/
+│ │ ├── auth/
+│ │ ├── dashboard/
+│ │ └── welcome/
+│ │
+│ ├── services/
+│ │ ├── auth.service.ts
+│ │ └── measurement.service.ts
+│ │
+│ ├── interceptors/
+│ │ └── auth.interceptor.ts
+│ │
+│ ├── guards/
+│ │ ├── auth.guard.ts
+│ │ └── guest.guard.ts
+│ │
+│ ├── app.component.*
+│ ├── app.module.ts
+│ └── app.routing.ts
 │
-├── assets/
-└── environments/
+├── environments/
+│ ├── environment.ts
+│ ├── environment.development.ts
+│ └── environment.prod.ts
+│
+├── angular.json
+├── package.json
+└── tsconfig.json
 ```
 
 ---
@@ -130,4 +150,33 @@ Open http://localhost:4200
 ### 🖼️ Application Snapshots
 
 
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+``
+git clone https://github.com/GitHubArvind01/QuantityMeasurementApp-Frontend.git
+cd QuantityMeasurementApp-Frontend
+``
+2️⃣ Install Dependencies
+``
+npm install
+``
+
+3️⃣ Configure Environment
+Update API URLs and keys inside:
+
+src/environments/environment.ts
+4️⃣ Run Application
+``
+ng serve
+``
+👉 Open in browser:
+``
+http://localhost:4200
+``
+
+```
 ---
