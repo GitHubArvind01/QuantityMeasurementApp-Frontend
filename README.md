@@ -155,28 +155,27 @@ Open http://localhost:4200
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
+
 ```bash
-``
 git clone https://github.com/GitHubArvind01/QuantityMeasurementApp-Frontend.git
 cd QuantityMeasurementApp-Frontend
-``
+```
+
 2️⃣ Install Dependencies
-``
+```bash
 npm install
-``
+```
 
 3️⃣ Configure Environment
 Update API URLs and keys inside:
 
 src/environments/environment.ts
 4️⃣ Run Application
-``
+```bash
 ng serve
-``
+```
 👉 Open in browser:
-``
+```bash
 http://localhost:4200
-``
-
 ```
 ---
