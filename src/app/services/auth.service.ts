@@ -2,12 +2,14 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable, tap } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private http = inject(HttpClient);
   private router = inject(Router);
-  private apiUrl = 'http://localhost:8080/auth/user';
+  private apiUrl = `${environment.gatewayUrl}`;
+  private googleAuthUrl = `${environment.gatewayUrl}/auth/google`;
 
   register(userData: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/register`, userData);
@@ -32,5 +34,24 @@ export class AuthService {
 
   getToken() {
     return localStorage.getItem('token');
+  }
+
+  initiateGoogleLogin() {
+    const clientId = `${environment.googleClientId}`;
+    const redirectUri = `${environment.googleRedirectUri}`; // Points back to this component
+    const scope = 'profile email';
+    const responseType = 'code';
+
+    const url = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=${responseType}&scope=${scope}&access_type=offline&prompt=select_account`;
+    
+    window.location.href = url;
+  }
+
+  handleGoogleCallback(code: string): Observable<any> {
+    return this.http.get(`${this.googleAuthUrl}/callback?code=${code}`).pipe(
+      tap((res: any) => {
+        if (res.token) localStorage.setItem('token', res.token);
+      })
+    );
   }
 }
