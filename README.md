@@ -147,11 +147,6 @@ Open http://localhost:4200
 
 ---
 
-### 🖼️ Application Snapshots
-
-
----
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
@@ -178,4 +173,9 @@ ng serve
 ```bash
 http://localhost:4200
 ```
+---
+
+### 🖼️ Application Snapshots
+
+
 ---
