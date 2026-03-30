@@ -29,7 +29,7 @@ This frontend is developed in **two different approaches**:
 ---
 
 # ⚙️ Frontend Architecture Flow
-
+```bash
 User Interface
 │
 ▼
@@ -46,7 +46,7 @@ Response Handling
 │
 ▼
 UI Update
-
+```
 
 ---
 
@@ -106,6 +106,10 @@ src/
 ├── package.json
 └── tsconfig.json
 ```
+
+---
+
+### 🖼️ Application Snapshots
 
 ---
 
@@ -173,9 +177,4 @@ ng serve
 ```bash
 http://localhost:4200
 ```
----
-
-### 🖼️ Application Snapshots
-
-
 ---
