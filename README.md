@@ -108,11 +108,15 @@ ng serve
 Open http://localhost:4200
 ```
 
+---
+
 ### 🔥 Key Learnings
 - Component-based UI design
 - Service-layer architecture
 - Reactive programming with Observables
 - Scalable frontend structure
+
+---
 
 ### 📌 Future Enhancements
 - 🔐 Authentication Integration (JWT / OAuth2)
@@ -121,4 +125,9 @@ Open http://localhost:4200
 - ⚡ Performance Optimization
 - 📦 State Management (NgRx)
 
+---
+
 ### 🖼️ Application Snapshots
+
+
+---
