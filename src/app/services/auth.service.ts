@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
 export class AuthService {
   private http = inject(HttpClient);
   private router = inject(Router);
-  private apiUrl = `${environment.gatewayUrl}`;
+  private apiUrl = `${environment.gatewayUrl}/auth/user`;
   private googleAuthUrl = `${environment.gatewayUrl}/auth/google`;
 
   register(userData: any): Observable<any> {

@@ -28,11 +28,11 @@ export class DashboardComponent implements OnInit {
   showHistory = false;
   
   units: any = {
-    LengthUnit: ["FEET", "INCHES", "YARD", "CENTIMETRE"],
-    WeightUnit: ["KG", "GRAM", "POUND"],
-    VolumeUnit: ["MILILITRE", "LITRE", "GALLON"],
+    LengthUnit: ["FEET", "INCHES", "YARD", "CENTIMETERS"],
+    WeightUnit: ["KILOGRAM", "GRAM", "POUND"],
+    VolumeUnit: ["MILLILITER", "LITRE", "GALLON"],
     TemperatureUnit: ["CELSIUS", "FAHRENHEIT", "KELVIN"]
-  };
+  };  
 
   calc = { val1: 1, val2: 1, unit1: '', unit2: '', operator: 'add' };
 
