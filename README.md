@@ -13,8 +13,8 @@ The **Quantity Measurement Application (Frontend)** is designed to provide a cle
 
 This frontend is developed in **two different approaches**:
 
-1. Vanilla Web Technologies (HTML, CSS, JS)
-2. Angular Framework (TypeScript)
+1. Vanilla Web Technologies (HTML, CSS, JS)  
+2. Angular Framework (TypeScript)  
 
 ---
 
@@ -29,23 +29,22 @@ This frontend is developed in **two different approaches**:
 ---
 
 # ⚙️ Frontend Architecture Flow
-
-```
+```bash
 User Interface
-      │
-      ▼
+│
+▼
 Event Handling
-      │
-      ▼
+│
+▼
 API / Service Calls
-      │
-      ▼
+│
+▼
 Backend / JSON Server
-      │
-      ▼
+│
+▼
 Response Handling
-      │
-      ▼
+│
+▼
 UI Update
 ```
 
@@ -74,20 +73,50 @@ Build a **scalable and maintainable frontend** using Angular with TypeScript.
 ---
 
 ### 📁 Project Structure
-
 ```
 src/
 │
 ├── app/
-│   ├── components/
-│   ├── services/
-│   ├── models/
-│   ├── app-routing.module.ts
-│   └── app.module.ts
+│ ├── components/
+│ │ ├── auth/
+│ │ ├── dashboard/
+│ │ └── welcome/
+│ │
+│ ├── services/
+│ │ ├── auth.service.ts
+│ │ └── measurement.service.ts
+│ │
+│ ├── interceptors/
+│ │ └── auth.interceptor.ts
+│ │
+│ ├── guards/
+│ │ ├── auth.guard.ts
+│ │ └── guest.guard.ts
+│ │
+│ ├── app.component.*
+│ ├── app.module.ts
+│ └── app.routing.ts
 │
-├── assets/
-└── environments/
+├── environments/
+│ ├── environment.ts
+│ ├── environment.development.ts
+│ └── environment.prod.ts
+│
+├── angular.json
+├── package.json
+└── tsconfig.json
 ```
+
+---
+
+### 🖼️ Application Snapshots
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023059" src="https://github.com/user-attachments/assets/9a6cf78a-2839-483a-8700-0f4e65f583e6" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023013" src="https://github.com/user-attachments/assets/a8bbdfc4-4ea7-4756-b6d7-8f2ae3a04fa2" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 023023" src="https://github.com/user-attachments/assets/4b18224e-dacc-4b8c-9b23-d5003672ebf1" />
+<img width="1920" height="1200" alt="Screenshot 2026-03-31 025850" src="https://github.com/user-attachments/assets/317b3908-2320-4b94-9587-5af2a67c3bda" />
+<img width="960" height="600" alt="Screenshot 2026-03-31 034738" src="https://github.com/user-attachments/assets/04b5ee66-ec57-4b0c-97af-df4823d152df" />
+<img width="960" height="599" alt="Screenshot 2026-03-31 034651" src="https://github.com/user-attachments/assets/2ba46c74-af5a-400b-92d9-054af806128b" />
+<img width="960" height="600" alt="Screenshot 2026-03-31 034659" src="https://github.com/user-attachments/assets/91855ff7-5985-45df-94ea-1310a7538779" />
 
 ---
 
@@ -103,7 +132,7 @@ src/
 
 ### 🚀 How to Run
 
-```
+```bash
 git checkout feature/frontend-angular
 npm install
 ng serve
@@ -113,20 +142,46 @@ Open http://localhost:4200
 ---
 
 ### 🔥 Key Learnings
-
-- Component-based UI design  
-- Service-layer architecture  
-- Reactive programming with Observables  
-- Scalable frontend structure  
+- Component-based UI design
+- Service-layer architecture
+- Reactive programming with Observables
+- Scalable frontend structure
 
 ---
 
-# 📌 Future Enhancements
+### 📌 Future Enhancements
+- 🔐 Authentication Integration (JWT / OAuth2)
+- 🛡️ Route Guards (Angular)
+- 🎨 UI Improvements (Material / Tailwind)
+- ⚡ Performance Optimization
+- 📦 State Management (NgRx)
 
-- 🔐 Authentication Integration (JWT / OAuth2)  
-- 🛡️ Route Guards (Angular)  
-- 🎨 UI Improvements (Material / Tailwind)  
-- ⚡ Performance Optimization  
-- 📦 State Management (NgRx)  
+---
 
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/GitHubArvind01/QuantityMeasurementApp-Frontend.git
+cd QuantityMeasurementApp-Frontend
+```
+
+2️⃣ Install Dependencies
+```bash
+npm install
+```
+
+3️⃣ Configure Environment
+Update API URLs and keys inside:
+
+src/environments/environment.ts
+4️⃣ Run Application
+```bash
+ng serve
+```
+👉 Open in browser:
+```bash
+http://localhost:4200
+```
 ---
