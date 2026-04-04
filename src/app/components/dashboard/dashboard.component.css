@@ -137,7 +137,7 @@ body {
     flex: 1;
     min-width: 120px;
     padding: 15px;
-    background: white;
+    background-color: #f2f2f2;
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
@@ -242,7 +242,7 @@ body {
     padding: 10px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    background: var(--primary-bg);
+    background-color: #f2f2f2;
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
@@ -399,4 +399,133 @@ body {
 .res-cell {
     font-weight: bold;
     color: var(--success);
+}
+
+/*RESPONSIVE STARTS HERE */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .header-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    flex-wrap: wrap;
+  }
+
+  .operator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .main-wrapper {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  .type-grid {
+    gap: 15px;
+  }
+
+  .type-card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .action-grid {
+    flex-direction: column;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .operator-container {
+    order: 2;
+    margin: 10px 0;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .calculator-card {
+    padding: 20px;
+  }
+
+  .result-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-row h2 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Small Mobile (Real App Feel 📱) */
+@media (max-width: 480px) {
+
+  .header {
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .type-card {
+    width: 70px;
+    height: 70px;
+  }
+
+  .type-card span {
+    font-size: 0.65rem;
+  }
+
+  .icon-box {
+    font-size: 1.2rem;
+  }
+
+  .action-btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .input-field input,
+  .input-field select {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .calculate-btn {
+    padding: 12px;
+  }
+
+  .modal-container {
+    width: 95%;
+    max-height: 85vh;
+  }
+
+  .history-table {
+    font-size: 0.75rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 8px;
+  }
 }
